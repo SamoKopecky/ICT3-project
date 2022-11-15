@@ -14,7 +14,7 @@ Protokol L2RS je implementovaný v jazyku Python a jako jedinou knihovnu využí
   \item \paramnott{$\sigma$}{283754}standardní guassova odchylka,
   \item \paramnott{$\gamma$}{13.6}hustota privátního klíče.
 \end{itemize}
-Tyto parametre bily zvolené aby splňovali bezpečnostní úroveň \texttt{III} protokolu. Vytváření podpisu trvá průměrně 43\,ms a ověření průměrně 38\,ms při výše opomenutých parametrech. Rychlost podpisu a ověření je samozřejmé závislá na parametrech stroje na kterém byli testované. Tyto časy byli měřené na procesoru AMD Ryzen 3600 z frekvencí jádra 3.6\,GHz.
+Tyto parametre bily zvolené aby splňovali bezpečnostní úroveň \texttt{III} protokolu \cite{Torres2018}. Vytváření podpisu trvá průměrně 43\,ms a ověření průměrně 38\,ms při výše opomenutých parametrech. Rychlost podpisu a ověření je samozřejmé závislá na parametrech stroje na kterém byli testované. Tyto časy byli měřené na procesoru AMD Ryzen 3600 z frekvencí jádra 3.6\,GHz.
 
 V tabulce \ref{sizes} je možné vidět velkosti jednolitých konstrukcí jako veřejný nebo~privátní klíč. Velkosti podpisu jsou lineárně závislé na počtu uživatelů který se zúčastňují podpisu. Velkost podpisu se dá jednoduše vypočítat podle rovnice
 \begin{equation}
