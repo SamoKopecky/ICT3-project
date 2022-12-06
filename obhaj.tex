@@ -85,26 +85,123 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 1. snímek s cíli (zadaním) práce
-\begin{frame} 
+\begin{frame}[c]
+    \large{
 	% nadpis snímku
 	\frametitle{Cíle práce}
-	\begin{itemize}
-			\item Nastudovat
-			\item Popsat
-				\begin{itemize}
-					\item nastudované
-				\end{itemize}
-			\item Implementovat
-				\begin{itemize}
-					\item nastudované
-					\item nové
-				\end{itemize}
-			\item Porovnat a vyhodnotit
-				\begin{itemize}
-						\item výsledky
-				\end{itemize}
-	\end{itemize}
+    \begin{itemize}
+        \item Seznámení s kruhovými podpisy
+        \item Vybrání postkvantového algoritmu
+        \item Implementace postkvantového schématu kruhových podpisů
+    \end{itemize}
+}
 \end{frame}
+
+\begin{frame} 
+	% nadpis snímku
+	\frametitle{Kruhový podpis}
+    \large{
+    \begin{itemize}
+        \item Publikován v~roce 2001
+        \item Anonymita
+        \item Každý člen má vlastní pár asymetrických klíčů
+    \end{itemize}
+    }
+	\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.45\textwidth]{img/ring_signature.pdf}
+  
+  
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+	% nadpis snímku
+	\frametitle{Post kvantové algoritmy}
+    \large{
+    \begin{itemize}
+        \item První kruhový podpis byl založený na algoritmu RSA
+        \item Kvantové počítače jsou schopné prolomit současnou kryptografii
+        \item Kryptografie založená na mřížkách
+    \end{itemize}
+    \begin{figure}[htbp]
+      \centering
+      \includegraphics[width=0.4\textwidth]{img/mrizky.png}
+      
+  
+    \end{figure}
+    }	
+\end{frame}
+
+\begin{frame}
+	% nadpis snímku
+	\frametitle{Protokol L2RS}
+    \large{
+    \begin{itemize}
+        \item Implementace v Python
+        % \item Jediná využívaná knihovna je \texttt{numpy}
+        \item Založený na BLISS postkvantovém podpisu
+        \item Vytváření podpisu trvá průměrně 43\,ms
+        \item Ověření podpisu trvá průměrně 38\,ms
+        \item Velikost podpisu roste lineárně 
+    \end{itemize}
+    }	
+    \begin{table}[htbp]
+  \centering
+
+  \begin{tabular}{|l|c|r|}
+    \hline
+    Typ              & Počet uživatelů & Velikost (B) \\
+    \hline
+    Veřejný klíč     & -               & 896         \\
+    Privátní klíč    & -               & 4 480        \\
+    Podpis           & 1               & 7 168        \\
+    Podpis           & 2               & 12 544       \\
+    \hline
+  \end{tabular}
+  \label{sizes}
+\end{table}
+
+\end{frame}
+
+
+\begin{frame}[c] 
+    
+	\frametitle{Praktická ukázka}
+	\begin{center}
+		\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.65\textwidth]{img/network_diagram.pdf}
+  
+  
+\end{figure}
+	\end{center}
+\end{frame}
+
+\begin{frame}[c] 
+
+	\frametitle{Závěr}
+	\large{
+    \begin{itemize}
+        \item Teoretické seznámeni s problematikou
+        
+        \item Úspěšná implementace zadání
+        
+        
+    \end{itemize}
+    }
+\end{frame}
+
+
+\begin{frame}[c] 
+
+	\frametitle{\mbox{ }}
+	\begin{center}
+		{\Huge Děkujeme za pozornost!}
+	\end{center}
+\end{frame}
+
 
 
 \end{document}
